@@ -1,6 +1,7 @@
 package engine;
 
 import exception.CreateTankException;
+import map.Map;
 import tank.Tank;
 import tank.TankEnemy;
 import tank.TankUser;
@@ -33,6 +34,7 @@ public class Engine {
         }
 
         //create map
+        Map map = new Map(1000, 1000);
     }
 
     private boolean createUsersTanks (int numberOfUsers) {
